@@ -1,5 +1,11 @@
 <!DOCTYPE html>
+
 <html>
+
+<% flash.each do |name, msg| %>
+   <div><%= msg %></div>
+<% end %>
+
   <head>
     <title>Suggestotron1</title>
     <%= csrf_meta_tags %>
